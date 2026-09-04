@@ -29,3 +29,8 @@ nav:
   - Troubleshooting:
       - Customer creation issues: troubleshooting-customer-creation.md
   - Account settings: account-settings.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
