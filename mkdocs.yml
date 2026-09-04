@@ -3,8 +3,20 @@ site_name: F1 Technical Authoring Demo
 theme:
   name: material
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 nav:
   - Home: index.md
   - Getting started: getting-started.md
+  - Using Orbit CRM:
+      - Overview: overview.md
+      - Create a customer: create-customer.md
+      - Example - Create a customer: example-create-customer.md
+  - Reference:
+      - Customer fields: customer-fields-reference.md
+  - Troubleshooting:
+      - Customer creation issues: troubleshooting-customer-creation.md
   - Account settings: account-settings.md
-  
