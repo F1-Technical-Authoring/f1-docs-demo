@@ -1,5 +1,7 @@
 # Create a customer
 
+_Last updated: 4 September 2026_
+
 Create a customer record when you need to add a new organisation to Orbit CRM.
 
 ## Before you begin
