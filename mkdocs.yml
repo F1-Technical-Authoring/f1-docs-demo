@@ -6,8 +6,6 @@ theme:
     - navigation.footer
   palette:
     - scheme: default
-      primary: blue grey
-      accent: indigo
 
 extra_css:
   - stylesheets/extra.css
