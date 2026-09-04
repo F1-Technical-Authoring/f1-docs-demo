@@ -8,6 +8,9 @@ theme:
   palette:
     - scheme: default
 
+hooks:
+  - hooks.py
+
 extra_css:
   - stylesheets/extra.css
   
