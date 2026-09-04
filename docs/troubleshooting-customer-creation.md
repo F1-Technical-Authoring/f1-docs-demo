@@ -12,7 +12,7 @@ Your user account may not have permission to create customers.
 
 Contact your Orbit CRM administrator and request the **Create customers** permission.
 
-**Note:** You can still view existing customer records if you have read-only access.
+!!! note You can still view existing customer records if you have read-only access.
 
 ## A customer with this name already exists
 
