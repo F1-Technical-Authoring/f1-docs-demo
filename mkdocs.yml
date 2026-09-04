@@ -1,0 +1,7 @@
+site_name: F1 Technical Authoring Demo
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
