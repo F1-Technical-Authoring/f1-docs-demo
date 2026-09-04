@@ -20,7 +20,7 @@ The following fields are available when creating or editing a customer.
 | On hold | Account temporarily suspended. |
 | Closed | Customer account is no longer active. |
 
-!!! caution
+!!! warning
     Changing a customer to **Closed** may prevent users from creating new activity against the account.
 
 !!! note
