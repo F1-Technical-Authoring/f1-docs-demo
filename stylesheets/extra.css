@@ -32,3 +32,8 @@ body {
   font-size: 0.85rem;
   color: var(--md-default-fg-color--light);
 }
+.page-feedback {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
