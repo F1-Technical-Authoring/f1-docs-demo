@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-  {% if page and page.meta and page.meta.git_revision_date_localized %}
-    <div class="md-source-file">
-      {{ page.meta.git_revision_date_localized }}
-    </div>
+  {% if page %}
+    {{ page.content | replace(
+      "</h1>",
+      "</h1>" ~
+      (
+        '<div class="md-source-file">' ~
+        page.meta.git_revision_date_localized ~
+        '</div>'
+        if page.meta and page.meta.git_revision_date_localized
+        else ''
+      ),
+      1
+    ) | safe }}
   {% endif %}
-
-  {{ super() }}
 {% endblock %}
