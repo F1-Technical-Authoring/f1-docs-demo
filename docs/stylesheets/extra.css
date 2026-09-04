@@ -15,6 +15,54 @@ body {
   background-color: #faf9f7;
 }
 
+/* Wider overall documentation layout */
+.md-grid {
+  max-width: 92rem;
+}
+
+/* Left navigation */
+.md-sidebar--primary {
+  width: 16rem;
+}
+
+/* Right table of contents */
+.md-sidebar--secondary {
+  width: 15rem;
+}
+
+/* Main article area */
+.md-content {
+  max-width: 62rem;
+}
+
+/* More comfortable article spacing */
+.md-content__inner {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* Slightly stronger page heading */
+.md-typeset h1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* GitHub-ish section headings */
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Make left navigation section labels stronger */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 600;
+}
+
+/* Subtle divider before article sections */
+.md-typeset h2 {
+  padding-top: 0.25rem;
+}
+
 .md-typeset a {
   color: #8a6b3f;
 }
