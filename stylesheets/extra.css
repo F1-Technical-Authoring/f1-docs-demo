@@ -15,6 +15,26 @@ body {
   background-color: #faf9f7;
 }
 
+.md-nav--primary > .md-nav__title {
+  font-size: 0;
+}
+
+.md-nav--secondary > .md-nav__title {
+  font-size: 0;
+}
+
+.md-nav--secondary > .md-nav__title::after {
+  content: "In this article";
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.md-nav--primary > .md-nav__title::after {
+  content: "Table of Contents";
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 /* Wider overall documentation layout */
 .md-grid {
   max-width: 92rem;
