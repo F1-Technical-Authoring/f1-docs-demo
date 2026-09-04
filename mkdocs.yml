@@ -6,3 +6,5 @@ theme:
 nav:
   - Home: index.md
   - Getting started: getting-started.md
+  - Account settings: account-settings.md
+  
