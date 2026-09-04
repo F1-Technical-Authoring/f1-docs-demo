@@ -2,6 +2,7 @@ site_name: F1 Technical Authoring Demo
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.footer
   palette:
