@@ -3,8 +3,14 @@ site_name: F1 Technical Authoring Demo
 theme:
   name: material
   custom_dir: docs/overrides
+
   features:
     - navigation.footer
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+
   palette:
     - scheme: default
 
