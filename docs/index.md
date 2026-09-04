@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 # F1 Technical Authoring Demo
 
 Welcome to the demo help centre.
