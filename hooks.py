@@ -1,51 +1,24 @@
 import re
 
-def get_topic_type(src_path):
-    filename = src_path.split("/")[-1].lower()
-
-    if filename.startswith("troubleshooting-"):
-        return "Troubleshooting"
-    if filename.startswith("example-"):
-        return "Example"
-    if "reference" in filename:
-        return "Reference"
-    if filename == "overview.md":
-        return "Overview"
-    if filename in ["index.md", "getting-started.md"]:
-        return None
-
-    return "Task"
-
-
 def on_page_content(html, page, **kwargs):
-    meta_html = ""
-
-    topic_type = get_topic_type(page.file.src_path)
-
-    if topic_type:
-        meta_html += f'''
-<span class="topic-type topic-type--{topic_type.lower()}">
-  {topic_type}
-</span>
-'''
-
+    # Add the revision date under the H1
     if page.meta and page.meta.get("git_revision_date_localized"):
         revision = page.meta["git_revision_date_localized"]
 
-        meta_html += f'''
+        date_html = f'''
 <div class="page-revision-date">
   Last updated: {revision}
 </div>
 '''
 
-    if meta_html:
         html = re.sub(
             r'(</h1>)',
-            r'\1' + meta_html,
+            r'\1' + date_html,
             html,
             count=1
         )
 
+    # Add feedback to all pages except the homepage
     if page.file.src_path != "index.md":
         feedback_html = '''
 <div class="page-feedback">
@@ -64,6 +37,7 @@ def on_page_content(html, page, **kwargs):
   </div>
 </div>
 '''
+
         html += feedback_html
 
     return html
