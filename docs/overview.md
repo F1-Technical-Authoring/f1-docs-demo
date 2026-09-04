@@ -36,18 +36,3 @@ You can use Orbit CRM to:
 
 !!! note
     The options available to you may depend on your user permissions.
-<hr>
-
-<div class="page-feedback">
-  <span class="page-feedback__label">Was this helpful?</span>
-
-  <div class="page-feedback__actions">
-    <a class="feedback-button" href="mailto:YOUR-EMAIL@example.com?subject=Documentation%20feedback%20-%20Helpful">
-      👍 Yes
-    </a>
-
-    <a class="feedback-button" href="mailto:YOUR-EMAIL@example.com?subject=Documentation%20feedback%20-%20Not%20helpful">
-      👎 No
-    </a>
-  </div>
-</div>
