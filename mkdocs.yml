@@ -2,6 +2,8 @@ site_name: F1 Technical Authoring Demo
 
 theme:
   name: material
+  features:
+    - navigation.footer
 
 markdown_extensions:
   - admonition
